@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="images/x-icon" href="/img/vhotel-logo.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reservation.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#"><img src="/img/vhotel-logo.png" alt="VHotel" id="logo" /></a>
+
+      <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="facilities.html">Facility</a>
+        <a href="room.html">Rooms</a>
+        <a href="#" style="text-decoration: underline">Reservation</a>
+      </div>
+
+      <div class="hamburger">
+        <div id="btn-line"></div>
+        <div id="btn-line"></div>
+        <div id="btn-line"></div>
+      </div>
+    </nav>
+    <div class="patern"></div>
+    <main class="content">
+      <form>
+        <div class="input">
+          <label for="nama">Name:* </label>
+          <input type="text" id="nama" />
+          <br />
+          <p id="cname" style="display: none; color: red">*Name Required</p>
+        </div>
+        <br />
+        <div class="input">
+          <label for="contact">Contact*: </label>
+          <input type="text" id="contact" />
+          <br />
+          <p id="ccon" style="display: none; color: red">*Fill Your Contact</p>
+        </div>
+        <br />
+        <div class="input">
+          <label for="type">Select Room*: </label>
+          <select id="type">
+            <option value="0">-- Select Room Type --</option>
+            <option value="comfort">Comfort Room</option>
+            <option value="V">V Room</option>
+          </select>
+          <br />
+          <p id="ctype" style="display: none; color: red">*Select Room Type</p>
+        </div>
+        <br />
+        <div class="input">
+          <label for="in">Check in*: </label>
+          <input type="date" id="in" />
+          <br />
+          <p id="cin" style="display: none; color: red">*When Will You Come</p>
+        </div>
+        <br />
+        <div class="input">
+          <label for="out">Stayed*: </label>
+          <input type="number" id="out" />
+          <p>night(s)</p>
+          <br />
+          <p id="cout" style="display: none; color: red">
+            *How Long Do You Want To Stayed (more than 0).
+          </p>
+        </div>
+        <br />
+        <button type="button" onclick="validateRegistration()">Book</button>
+      </form>
+    </main>
+
+    <i
+      data-feather="arrow-up-circle"
+      onclick="topFunction()"
+      id="topscroll"
+    ></i>
+
+    <footer>
+      <div class="socials">
+        <a href="index.html"><i data-feather="home"></i></a>
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="linkedin"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="facilities.html">Menu</a>
+        <a href="room.html">Rooms</a>
+        <a href="facilities.html">Facility</a>
+      </div>
+    </footer>
+    <script src="/javascript/script.js"></script>
+    <script src="/javascript/reservation.js"></script>
+  </body>
+</html>
